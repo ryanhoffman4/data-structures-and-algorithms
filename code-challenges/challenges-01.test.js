@@ -12,7 +12,9 @@ const addOne = (arr) => {
   // Solution code here...
   let localArray = []
   arr.forEach((number) => {number += 1; localArray.push(number)});
-  return localArray
+  return localArray;
+=======
+
 };
 
 /* ------------------------------------------------------------------------------------------------
