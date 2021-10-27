@@ -12,12 +12,11 @@ const raisedToTheThird = (arr) => {
   // Solution code here...
   let localArray = [];
   arr.forEach((number) => {
-    number = Math.pow(number, 3); 
-    localArray.push(number)
+    number = Math.pow(number, 3);
+    localArray.push(number);
   });
   return localArray;
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -28,9 +27,8 @@ Write a function named addOne that, given an array of numbers, uses map to retur
 const addOne = (arr) => {
   // Solution code here...
   let newArray = arr.map(x => x + 1);
-    return newArray;
+  return newArray;
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -74,7 +72,10 @@ Write a function named forEachTwoToThe that produces the same output as your for
 const forEachTwoToThe = (arr) => {
   // Solution code here...
   let localArray = [];
-  arr.forEach((number) => {number = Math.pow(2, number); localArray.push(number)})
+  arr.forEach((number) => {
+    number = Math.pow(2, number);
+    localArray.push(number)
+  });
   return localArray;
 };
 
@@ -275,7 +276,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should return an array containing the character code for each letter', () => {
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([ 67, 111, 100, 101, 51, 48, 49 ]);
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1']).length).toStrictEqual(7);
