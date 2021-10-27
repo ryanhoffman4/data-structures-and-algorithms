@@ -18,6 +18,8 @@ const raisedToTheThird = (arr) => {
   return localArray;
 };
 
+// this is a test comment
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
