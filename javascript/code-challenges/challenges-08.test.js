@@ -114,14 +114,7 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
-  // remove punctuation from the string
-  str = str.replace(/[^A-Z]i/, '');
-  // convert string into array of words
-  let stringArray = str.split(' ');
-  // establish selector for beginning of word, followed by capital letter, followed by lower cases
-  let regex = /[A-Z][a-z]+/;
-  // filter according to selector
-  return stringArray.filter(word => regex.test(word));
+  return str.match(/\b[A-Z][a-z]+/g) || []; 
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -132,7 +125,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
-  let regex = /\b[A-J]/
+  let regex = /^[A-J]/
   arr = arr.filter(city_name => regex.test(city_name));
   return arr;
 };
